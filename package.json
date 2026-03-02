@@ -1,0 +1,26 @@
+{
+  "name": "phaser3-pong",
+  "version": "1.0.0",
+  "description": "> A basic Pong-style game template in Phaser 3",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "scripts": {
+    "build-gh": "parcel build src/index.html --out-dir dist --public-url /pong-template-phaser3/",
+    "start": "parcel src/index.html -p 8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "git-filter-repo": "^0.0.30",
+    "phaser": "^3.90.0",
+    "webfontloader": "^1.6.28"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4",
+    "parcel-plugin-static-files-copy": "^2.3.1"
+  },
+  "staticFiles": {
+    "staticPath": "public",
+    "watcherGlob": "**"
+  }
+}
